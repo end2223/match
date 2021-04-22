@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="./bootstrap3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./csstt.css">
+
+    <script type="text/javascript" src="./bootstrap3/jquery.js"></script>
+    <script type="text/javascript" src="./bootstrap3/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-default navbar-fixed-top container" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Title</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                            <li ><a href="http://localhost:3000/Home.html">Matches</a></li>
+                            <li><a href="http://localhost:3000/Customer.html">Customer</a></li>
+                            <li class="active"><a href="http://localhost:3000/Booking.html">Booking</a></li>
+                        </ul>
+
+                    </div><!-- /.navbar-collapse -->
+                </div>
+            </nav>
+
+            <div class="row" style="margin-top: 70px; ">
+                <div class="col-md-4" style="background-color: #eee; height: 100vh;">
+                    <div class="search" style="margin-bottom: 20px;">
+                        <div style="font-size: 20px; font-style: bold;"><label for="search">Search</label></div>
+                        <input type="text" id="search" style="" class="col-md-8" placeholder="Enter the match ID">
+
+                        <div>
+                            <button id="_search" style="margin-left: 20px; width: 80px;" onclick="clickSearch()">Oke</button>
+                        </div>
+                    </div>
+
+                    <div class="order_header" style="">
+                        <div class="col-md-12" style="border-top: solid #999 1px;padding-top: 20px;"></div>
+                        <div class="order" >
+                            <div style="margin-bottom: 10px; width: 90px">
+                                <label for="matchId">Match ID</label>
+                                <input type="text" id="matchId" placeholder="Enter the match ID">
+                            </div>
+                            <div style="margin-bottom: 10px; width: 90px">
+                                <label for="ticketId">Ticket ID</label>
+                                <input type="text" id="ticketId" placeholder="Enter the ticket ID">
+                            </div>
+                            <div style="margin-bottom: 10px; width: 90px">
+                                <label for="customerId">Customer ID</label>
+                                <input type="text" id="customerId" placeholder="Enter the customer ID">
+                            </div>
+                            <div style="height: 25px;">
+                                <i id="noti"></i>
+                            </div>
+                            <button onclick="start()">
+                                Book tickets
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-8" id="_table" style="height:80vh; overflow-y:scroll;">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </body>
+    <script src="./js/match_list.js"></script>
+    <script src="./js/booking.js"></script>
+    <script>
+        renderTickets("all", "1");
+    </script>
+</html>
+

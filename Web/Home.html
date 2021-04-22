@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="./bootstrap3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./csstt.css">
+    <script type="text/javascript" src="./bootstrap3/jquery.js"></script>
+    <script type="text/javascript" src="./bootstrap3/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-default navbar-fixed-top container" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Title</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Matches</a></li>
+                            <li><a href="http://localhost:3000/Customer.html">Customer</a></li>
+                            <li><a href="http://localhost:3000/Booking.html">Booking</a></li>
+                        </ul>
+
+                    </div><!-- /.navbar-collapse -->
+                </div>
+            </nav>
+
+
+            <div class="match_list" style="margin-top: 70px;">
+                <table class="table table-hover table-striped table-condensed table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Number</th>
+                            <th>Match ID</th>
+                            <th>NumberOfTicket</th>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Booking</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tr_body">
+
+
+                    </tbody>
+                </table>
+                <div><i style="color: red;">Index, number of ticket, name and date is required!</i></div>
+                <button id="addClick">Add Match</button>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="./js/match_list.js">
+    </script>
+    <script>start();</script>
+</html>

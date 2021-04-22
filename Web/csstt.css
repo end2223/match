@@ -1,0 +1,15 @@
+.line{
+	border: 1px black solid;
+	margin: 10px 50px 10px 0px;
+	border-radius: 5px;
+}
+
+h4.mg{
+	/*margin: 30px; */
+}
+
+.thongtin{
+	/*background-color: black;*/box-shadow: 0px 0px 20px black;
+
+	/*background-color: rgba(255, 255, 255, 1);*/
+}

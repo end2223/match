@@ -1,0 +1,20 @@
+
+.ip1{
+	background: transparent;
+	border: none;
+	border-radius: none;
+	border-bottom: #4f4444 2px solid;
+	width: 300px;
+	height: 35px;
+}
+.ip1:focus{
+	/*background-color: rgba(128,169,217,78);*/
+	border: transparent 0px;
+}
+
+.btn-dn{
+	width: 300px;
+	border-radius: 0px;
+	background-color: #eb144c;
+}
+
